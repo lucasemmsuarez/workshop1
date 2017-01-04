@@ -1,0 +1,110 @@
+/*
+font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif;
+*/
+
+/* NAV */
+
+.contenedor{
+	max-width: 900px;
+	margin: auto;
+}
+
+.topo{
+	background: rgb(44,62,80);
+	font-family: 'Montserrat', sans-serif;
+	color: white;
+	font-weight: 700;
+	overflow: auto;
+	padding: 25px 0;
+	text-transform: uppercase;
+}
+
+.topo h2{
+	font-size: 20px;
+	display: inline;
+}
+
+.topo .menu a{
+	font-size: 10px;
+	color: white;
+	text-decoration: none;
+}
+
+.menu{
+	float: right;
+}
+
+.menu li{
+	display: inline-block;
+	padding: 0px 10px;
+}
+
+/* HEADER */
+
+.banner{
+	background: rgb(24,188,156);
+	text-align: center;
+	padding: 35px 0 35px 0;
+}
+
+.foto{
+	width: 160px;
+}
+
+.banner .titulo{
+	text-transform: uppercase;
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 35px;
+	padding: 10px 0 10px 0;
+}
+
+/* ESTRELLITA */
+
+.starwhite:before,.starwhite:after{
+	content: "";
+	width: 50px;
+	height: 2px;
+	background: white;
+	display: inline-block;
+	margin-bottom: 5px;
+}
+
+.starwhite .ion-star{
+	color: white;
+}
+
+.banner .descripcion{
+	color: white;
+	padding: 10px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 12px;
+    font-weight: 400;
+}
+
+.galeria{
+	padding: 35px 0 35px 0;
+	text-align: center;
+}
+
+.contenedor .port{
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 20px;
+    padding-bottom: 5px;
+}
+
+.starblack:before,.starblack:after{
+	content: "";
+	width: 50px;
+	height: 2px;
+	background: black;
+	display: inline-block;
+	margin-bottom: 5px;
+}
+
+.starblack.ion-star{
+	color: black;
+}
