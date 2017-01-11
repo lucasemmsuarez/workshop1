@@ -6,6 +6,7 @@
 	<link rel="stylesheet" href="styles/reset.css">
 	<link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans:400,600,700" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Portfolio</title>
 </head>
 <body>
@@ -19,7 +20,7 @@
 			</ul>
 		</div>
 	</nav>
-	<header class="banner">
+	<header class="banner seccion">
 		<div class="contenedor">
 			<img src="images/profile.png" alt="" class="foto">
 			<h1 class="titulo">nombre apellido</h1>
@@ -32,27 +33,86 @@
 			<h2 class="descripcion">Web Developer - Graphic Artist - User Experience Designer</h2>
 		</div>
 	</header>
-	<section class="galeria">
+	<section class="galeria seccion">
 		<div class="contenedor">
-			<h3 class="port">PORTFOLIO</h3>
+			<h3 class="subtitulo">PORTFOLIO</h3>
 			<span class="starblack">
 				<span class="ion-star">
 				</span>
 			</span>
 			<article class="portfolio">
-				<img src="images/cabin.png" alt="">
-				<img src="images/cake.png" alt="">
-				<img src="images/circus.png" alt="">
-				<img src="images/game.png" alt="">
-				<img src="images/safe.png" alt="">
-				<img src="images/submarine.png" alt="">
+					<article class="portfolio-item">
+						<figure>
+							<a href="#portfolio-01">
+								<img src="images/cabin.png" class="img-responsive">
+								<div>
+									<span class="ion-search"></span>
+								</div>
+							</a>
+						</figure>
+					</article>
+
+					<article class="portfolio-item">
+						<figure>
+							<a href="#portfolio-01" data-toggle="modal">
+								<img src="images/cake.png" class="img-responsive">
+								<div>
+									<span class="ion-search"></span>
+								</div>
+							</a>
+						</figure>
+					</article>
+
+					<article class="portfolio-item">
+						<figure>
+							<a href="#portfolio-01">
+								<img src="images/circus.png" class="img-responsive">
+								<div>
+									<span class="ion-search"></span>
+								</div>
+							</a>
+						</figure>
+					</article>
+
+					<article class="portfolio-item">
+						<figure>
+							<a href="#portfolio-01">
+								<img src="images/game.png" class="img-responsive">
+								<div>
+									<span class="ion-search"></span>
+								</div>
+							</a>
+						</figure>
+					</article>
+
+					<article class="portfolio-item">
+						<figure>
+							<a href="#portfolio-01">
+								<img src="images/safe.png" class="img-responsive">
+								<div>
+									<span class="ion-search"></span>
+								</div>
+							</a>
+						</figure>
+					</article>
+
+					<article class="portfolio-item">
+						<figure>
+							<a href="#portfolio-01">
+								<img src="images/submarine.png" class="img-responsive">
+								<div>
+									<span class="ion-search"></span>
+								</div>
+							</a>
+						</figure>
+					</article>
 			</article>
 		</div>
 	</section>
-	<section>
+	<section class="about seccion">
 		<div class="contenedor">
-			<h3>ABOUT</h3>
-			<span class="starblack">
+			<h3 class="subtitulo">ABOUT</h3>
+			<span class="starwhite">
 				<span class="ion-star">
 				</span>
 			</span>
@@ -60,30 +120,30 @@
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates quas animi error maxime quaerat, vel voluptatem aperiam dolorem. Explicabo excepturi voluptas, ex autem laboriosam earum voluptate quae reprehenderit veritatis magnam.</p>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates quas animi error maxime quaerat, vel voluptatem aperiam dolorem. Explicabo excepturi voluptas, ex autem laboriosam earum voluptate quae reprehenderit veritatis magnam.</p>
 			</article>
-			<a href="#" class="ion-ios-download-outline">Download theme</a>
+			<a href="music/calamaro.mp3" download="Calamaro" class="cancion"><span class="ion-ios-download-outline"></span>Download Theme</a>
 		</div>
 	</section>
-	<section>
+	<section class="contacto seccion">
 		<div class="contenedor">
-			<h3>CONTACT ME</h3>
+			<h3 class="subtitulo">CONTACT ME</h3>
 			<span class="starblack">
 				<span class="ion-star">
 				</span>
 			</span>
 			<form method="POST" action="enviar.php" enctype="multipart/form-data">
-				<input type="text" name="name" placeholder="Name">
+				<input type="name" name="name" placeholder="Name">
 				<input type="email" name="email" placeholder="Email Address">
 				<input type="tel" name="telefono" placeholder="Phone Number">
-				<input type="text" name="msje" placeholder="Message" class="texto">
-				<input type="submit" value="Send">
+				<input type="text" name="msje" placeholder="Message" class="mensaje">
+				<input type="submit" value="Send" class="send">
 			</form>
 		</div>
 	</section>
-	<footer>
+	<footer class="footer">
 		<div class="contenedor">
 			<article>
 				<h4>LOCATION</h4>
-				<p>Lorem ipsum dolor sit amet, consectetur.</p>
+				<p>3481 Melrose Place Beverly Hills, CA 90210</p>
 			</article>
 			<article>
 				<h4>AROUND THE WEB</h4>
@@ -97,11 +157,11 @@
 			</article>
 			<article>
 				<h4>ABOUT FREELANCER</h4>
-				<p>Freelance is a free to use, open source Bootstrap theme created by <a href="#">Start Bootstrap</a>.</p>
+				<p>Freelance is a free to use, open source Bootstrap theme created by <a href="#" class="start">Start Bootstrap</a>.</p>
 			</article>
 		</div>
 	</footer>
-	<section>
+	<section class="ultimo">
 		<div class="contenedor">
 			<p>Copyright © Your Website 2017</p>
 		</div>
